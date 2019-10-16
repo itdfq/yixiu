@@ -2,6 +2,6 @@
          pageEncoding="UTF-8"%>
 <html>
 <body>
-<jsp:forward page="/pages/main.jsp"></jsp:forward>
+<a href="${pageContext.request.contextPath}/users/findAll.do?page=1&size=4">查询</a>
 </body>
 </html>

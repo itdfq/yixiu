@@ -3,12 +3,11 @@ package com.yixiu;
 public class Users {
     private int id;
     private String name;
-    private String username;
-    private String password;
     private String address;
-    private int mobilePhone;
+    private char mobilePhone;
     private String weChat;
-    private int numStr;
+    private int num;
+    private String numStr;
 
     public int getId() {
         return id;
@@ -26,22 +25,6 @@ public class Users {
         this.name = name;
     }
 
-    public String getUsername() {
-        return username;
-    }
-
-    public void setUsername(String username) {
-        this.username = username;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
     public String getAddress() {
         return address;
     }
@@ -54,7 +37,7 @@ public class Users {
         return mobilePhone;
     }
 
-    public void setMobilePhone(int mobilePhone) {
+    public void setMobilePhone(char mobilePhone) {
         this.mobilePhone = mobilePhone;
     }
 
@@ -66,11 +49,26 @@ public class Users {
         this.weChat = weChat;
     }
 
-    public int getNumStr() {
+    public int getNum() {
+        return num;
+    }
+
+    public void setNum(int num) {
+        this.num = num;
+    }
+
+    public String getNumStr() {  //0关闭 1开启
+        if(num==0){
+            numStr="关闭";
+        }
+        else{
+            numStr="开启";
+        }
+
         return numStr;
     }
 
-    public void setNumStr(int numStr) {
+    public void setNumStr(String numStr) {
         this.numStr = numStr;
     }
 }
