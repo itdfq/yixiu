@@ -2,6 +2,6 @@
          pageEncoding="UTF-8"%>
 <html>
 <body>
-<a href="#{pageContext.request.contextPath}/users/findAll.do" >查询所有用户</a>
+<a href="${pageContext.request.contextPath}/users/findAll.do" >查询所有用户</a>
 </body>
 </html>
