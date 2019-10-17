@@ -132,7 +132,7 @@ public class UsesController {
             }else{
                 Users login = usersService.login(username, password);
                 if(login==null){
-                    map.put("msg","用户不存在！！");
+                    map.put("msg","用户名或密码错误！！");
                 }else{
                     map.put("msg",1);
                 }
